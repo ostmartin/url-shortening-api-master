@@ -1,0 +1,12 @@
+ul{
+    padding-left: 4%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    height: 100%;
+
+    li {
+        list-style: none;
+        line-height: 2;
+    }
+}
