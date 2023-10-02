@@ -1,0 +1,24 @@
+@import '../../style/variables.scss';
+
+.boost{
+    background-color: $dark-violet;
+    background-image: url('../../images/bg-boost-desktop.svg');
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 1.5rem;
+    padding: 3rem 30%;
+
+    &__head{
+        color: white;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    button{
+        max-width: 10rem;
+        margin: 0 auto;
+        padding: .5rem 2rem;
+    }
+}

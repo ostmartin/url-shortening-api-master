@@ -6,10 +6,29 @@
 :root{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    min-width: 1280px;
+    min-width: 1440px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+main{
+    position: relative;
+}
+
+.template {
+    background-image: url('../../design/desktop-design.jpg'); /* Укажите путь к вашей картинке */
+    background-size: contain; /* Растягивает картинку, чтобы она заполнила весь блок */
+    background-position: center center; /* Выравнивание картинки по центру */
+    background-repeat: no-repeat; /* Запрет повтора фоновой картинки */
+    position: absolute; /* Устанавливаем позицию абсолютную относительно родителя */
+    z-index: -1; /* Устанавливает прозрачность (значение от 0 до 1, где 0 - полностью прозрачно, 1 - непрозрачно) */
+    height: 2300px;
+    width: 100%;
+    // scale: 1.01;
 }

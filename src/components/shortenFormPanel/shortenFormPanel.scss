@@ -1,0 +1,40 @@
+@import '../../style/variables.scss';
+
+.form__panel{
+    // position: relative;
+    width: 76%;
+    height: 9rem;
+    background-image: url('../../images/bg-shorten-desktop.svg');
+    background-color: $dark-violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transform: translateY(-50%);
+
+    form{
+        height: 3.7rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    button{
+        border-radius: 10px;
+        padding: .8rem 1.8rem;
+    }
+
+    input{
+        border-radius: 10px;
+        height: 100%;
+        border: none;
+        outline: none;
+        width: 70%;
+        padding-left: 2rem;
+
+        &::placeholder{
+            color: $grayish-violet;
+        }
+    }
+}

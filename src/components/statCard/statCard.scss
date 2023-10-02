@@ -1,0 +1,41 @@
+@import '../../style/variables.scss';
+
+.card{
+    min-width: 270px;
+    max-width: 380px;
+    // width: 25%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    position: relative;
+
+    .default__text{
+        transform: translateY(-15%);
+
+        .head{
+            font-size: 1.3rem;
+        }
+    
+        .content{
+            color: $grayish-violet;
+        }
+    }
+
+    &__icon{
+        border-radius: 50%;
+        background-color: rgb(58, 47, 84);
+        width: 96px;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transform: translateY(-65%);
+
+        img{
+            width: 45%;
+            height: 45%;
+        }
+    }
+}

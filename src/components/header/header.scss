@@ -4,12 +4,11 @@ header{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 5fr 1.5fr;
-    background-color: white;
-    margin-top: 4rem;
+    padding-top: 4rem;
     padding-inline: 10%;
 
     .logo{
-        height: 47px;
+        height: 35px;
         justify-self: start;
         align-self: center;
         // scale: 1.4;
