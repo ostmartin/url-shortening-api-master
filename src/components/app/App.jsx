@@ -1,7 +1,7 @@
-import { useState } from 'react';
-
 import MainContent from '../mainContent/MainContent';
 import Footer from '../footer/Footer';
+
+import './app.scss';
 
 function App() {
   return (

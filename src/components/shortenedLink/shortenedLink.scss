@@ -1,0 +1,37 @@
+@import '../../style/variables.scss';
+
+.short-link{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    display: grid;
+    padding: 1.5rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 25% 15%;
+    gap: 2rem;
+    transform: translateY(-90%);
+
+    button{
+        border-radius: 10px;
+        padding: .8rem 1.8rem;
+    }
+
+    .full{
+        align-self: center;
+        font-size: 1.3rem;
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+    }
+
+    .short {
+        justify-self: end;
+        align-self: center;
+        color: $cyan;
+        font-size: 1.3rem;
+    }
+
+    .copied{
+        background-color: $dark-violet !important;
+    }
+}
