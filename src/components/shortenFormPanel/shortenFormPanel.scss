@@ -1,11 +1,11 @@
 @import '../../style/variables.scss';
 
 .form__panel{
-    // position: relative;
-    width: 76%;
+    width: 80%;
     height: 9rem;
     background-image: url('../../images/bg-shorten-desktop.svg');
     background-color: $dark-violet;
+    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

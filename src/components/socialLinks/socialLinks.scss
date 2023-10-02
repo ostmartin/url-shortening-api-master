@@ -1,0 +1,12 @@
+@import '../../style/variables.scss';
+
+.social{
+    display: flex;
+    gap: 1rem;
+
+    a:hover{
+        path{
+            fill: $cyan;
+        }
+    }
+}

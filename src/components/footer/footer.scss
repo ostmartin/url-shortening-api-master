@@ -1,0 +1,14 @@
+@import '../../style/variables.scss';
+
+.footer{
+    background-color: $very-dark-violet;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 8rem;
+    color: white;
+
+    &__lists{
+        display: flex;
+        gap: 5rem;
+    }
+}
