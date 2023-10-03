@@ -1,9 +1,14 @@
+nav{
+    display: flex;
+    align-items: center;
+}
+
 ul{
     padding-left: 4%;
     display: flex;
     justify-content: flex-start;
     gap: 1.5rem;
-    height: 100%;
+    justify-self: center;
 
     li {
         list-style: none;

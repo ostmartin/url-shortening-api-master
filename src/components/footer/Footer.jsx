@@ -8,7 +8,9 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='footer__logo'>
+                <a href="#">
                 <img src={Logo} alt="Logo"/>
+                </a>
             </div>
             <div className='footer__lists'>
                 <FooterList 

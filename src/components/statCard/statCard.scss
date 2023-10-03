@@ -39,3 +39,35 @@
         }
     }
 }
+
+@media (max-width: 376px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 270px !important;
+
+        .default__text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .head{
+                font-size: 1rem;
+            }
+
+            .content{
+                text-align: center;
+                font-size: .8rem;
+            }
+        }
+
+        &__icon{
+            transform: translateX(-50%);
+            position: relative;
+            left: 50%;
+            top: -23%;
+            // height: auto;
+        }
+    }
+}

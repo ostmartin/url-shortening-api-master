@@ -24,3 +24,9 @@
         color: cyan;
     }
 }
+
+@media (max-width: 376px) {
+    .list{
+        text-align: center;
+    }
+}

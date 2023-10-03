@@ -24,3 +24,12 @@
         padding: .5rem 2rem;
     }
 }
+
+@media (max-width: 376px) {
+    .boost{
+        padding: 3rem 5%;
+        &__head{
+            font-size: 1.5rem;
+        }
+    }
+}

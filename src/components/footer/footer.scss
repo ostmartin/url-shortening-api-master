@@ -12,3 +12,19 @@
         gap: 5rem;
     }
 }
+
+@media (max-width: 376px) {
+    .footer{
+        flex-direction: column;
+        padding: 2rem 10%;
+
+        &__lists{
+            flex-direction: column;
+        }
+
+        &__logo{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+}

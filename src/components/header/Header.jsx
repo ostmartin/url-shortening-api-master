@@ -7,11 +7,13 @@ import logo from '../../images/logo.svg';
 const Header = () => {
     return (
         <header>
-            <div className="logo">
+            <a href="#" className="logo">
                 <img src={logo} alt="Logo" />
+            </a>
+            <div className="menu">
+                <NavBar/>
+                <LoginBlock/>
             </div>
-            <NavBar/>
-            <LoginBlock/>
         </header>
     )
 }

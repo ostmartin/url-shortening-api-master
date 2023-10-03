@@ -9,7 +9,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: auto 25% 15%;
     gap: 2rem;
-    transform: translateY(-90%);
+    transform: translateY(-40%);
 
     button{
         border-radius: 10px;
@@ -33,5 +33,43 @@
 
     .copied{
         background-color: $dark-violet !important;
+    }
+}
+
+@media (max-width: 376px) {
+    .short-link{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        min-height: 9rem;
+        height: auto;
+        width: 330px;
+        padding: 1rem;
+        
+            
+        &::after{
+            content: '';
+            background-color: $gray;
+            display: block;
+            height: 1px;
+            width: 330px;
+            position: absolute;
+            left: 0;
+            top: 3.5rem;
+        }
+
+        .full{
+            align-self: start;
+            font-size: 1rem;
+        }
+    
+        .short {
+            align-self: start;
+            font-size: 1rem;
+        }
+
+        button{
+            line-height: 1;
+        }
     }
 }
