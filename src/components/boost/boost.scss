@@ -27,6 +27,8 @@
 
 @media (max-width: 376px) {
     .boost{
+        background-image: url('../../images/bg-boost-mobile.svg');
+
         padding: 3rem 5%;
         &__head{
             font-size: 1.5rem;

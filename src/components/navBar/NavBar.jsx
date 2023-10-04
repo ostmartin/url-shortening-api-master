@@ -1,31 +1,33 @@
 import Button from "../button/Button";
+import LoginBlock from "../loginBlock/LoginBlock";
 
 import './navBar.scss';
 
 const NavBar = () => {
     return (
-        <nav>
-            <ul>
-                <li>
-                    <Button
-                        content='Features'
-                        type='button'
-                        className='secondary'/>
-                </li>
-                <li>
-                    <Button
-                        content='Pricing'
-                        type='button'
-                        className='secondary' />
-                </li>
-                <li>
-                    <Button
-                        content='Resources'
-                        type='button'
-                        className='secondary' />
-                </li>
-            </ul>
-        </nav>
+        <ul className="header__list">
+            <li className="header__list-item">
+                <Button
+                    content='Features'
+                    type='button'
+                    className='secondary'/>
+            </li>
+            <li className="header__list-item">
+                <Button
+                    content='Pricing'
+                    type='button'
+                    className='secondary' />
+            </li>
+            <li className="header__list-item">
+                <Button
+                    content='Resources'
+                    type='button'
+                    className='secondary' />
+            </li>
+            <li className="header__list-item">
+                <LoginBlock/>
+            </li>
+        </ul>
     )
 }
 

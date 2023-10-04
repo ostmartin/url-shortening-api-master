@@ -4,7 +4,7 @@ import './loginBlock.scss';
 
 const LoginBlock = () => {
     return (
-        <div className='login__block'>
+        <div className='header__login'>
             <Button
                 content='Login'
                 type='button'

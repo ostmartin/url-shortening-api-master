@@ -131,6 +131,10 @@
 
         .links-list{
             width: fit-content;
+
+            li{
+                margin-block: 1rem;
+            }
         }
     }
 }

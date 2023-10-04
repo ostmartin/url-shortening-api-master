@@ -1,22 +1,115 @@
 @import '../../style/variables.scss';
 
-header{
-    min-height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 10%;
-    gap: 5%;
+.header{
+    height: 150px;
+    position: relative;
+    z-index: 1;
 
-    .menu{
-        flex-grow: 1;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: inherit;
+        z-index: -1;
+    }
+
+    &__content{
+        height: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding-inline: 10%;
+    }
+
+    &__menu{
+        flex-grow: 1;
+        margin-left: 2rem;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 100%;
+
+        &-item{
+            display: flex;
+            width: 10%;
+            gap: 2rem;
+            text-align: center;
+        }
+
+        &-item:nth-child(4){
+            justify-content: flex-end;
+            width: 70%;
+        }
     }
 }
 
 @media (max-width: 376px) {
-    header{
-        min-height: 100px;
+    .header{
+        height: 100px;
+
+        &__menu{
+            position: absolute;
+            top: 100px;
+            background-color: $dark-violet;
+            left: 0;
+            width: 80%;
+            height: 300px;
+            border-radius: 10px;
+            display: none;
+            font-size: .8rem;
+            
+            &.active{
+                display: block;
+            }
+        }
+
+        &__list{
+            flex-direction: column;
+            width: 100%;
+            height: 90%;
+            transition: all 0.3s ease;
+
+            &-item{
+                width: 100%;
+                justify-content: center;
+                flex-grow: 1;
+
+                button{
+                    color: white;
+                    font-weight: 500;
+                    width: 90%;
+                }
+            }
+
+            &-item:nth-child(4){
+                margin-top: 1rem;
+                width: 100%;
+                justify-content: center;
+            }
+
+            &-item:nth-child(3){
+                position: relative;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    width: 88%;
+                    height: 1px;
+                    background-color: $gray;
+                }
+            }
+        }
+
+        &__login{
+            flex-direction: column;
+            width: 100%;
+        }
     }
 }

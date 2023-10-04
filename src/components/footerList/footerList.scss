@@ -28,5 +28,9 @@
 @media (max-width: 376px) {
     .list{
         text-align: center;
+
+        &__item{
+            margin-block: 1rem;
+        }
     }
 }
